@@ -1,0 +1,22 @@
+body {
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 12px;
+}
+
+header {
+	width: 1024px;
+	margin: auto;
+}
+
+.name {
+	font-size: 48px;
+	color: #1B7AE0;
+}
+
+.title {
+	font-size: 36px;
+}
+
+.subtitle {
+	font-size: 20px;
+}
