@@ -13,6 +13,14 @@ body {
   margin: 5px 0;
 }
 
-.row.extra-margin {
-  margin-bottom: 0.5em;
+.extra-margin {
+  margin-bottom: 1.2em;
+}
+
+.extra-margin:last-child {
+  margin-bottom: 0.2em;
+}
+
+.stronger {
+  font-weight: 500;
 }
