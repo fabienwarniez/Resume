@@ -24,3 +24,11 @@ body {
 .stronger {
   font-weight: 500;
 }
+
+ul.no-padding {
+  padding-left: 30px;
+}
+
+h4.label-list {
+  line-height: 1.5em;
+}
