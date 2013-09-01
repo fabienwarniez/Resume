@@ -32,3 +32,10 @@ ul.no-padding {
 h4.label-list {
   line-height: 1.5em;
 }
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -65px;
+  visibility: hidden;
+}

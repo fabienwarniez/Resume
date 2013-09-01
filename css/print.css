@@ -1,0 +1,72 @@
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.jumbotron {
+  font-size: 14px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.jumbotron h1 {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.jumbotron p {
+  margin-bottom: 5px;
+}
+
+.jumbotron h1 small {
+  font-size: 16px;
+}
+
+.extra-margin {
+  margin-bottom: 0.5em;
+}
+
+.extra-margin:last-child {
+  margin-bottom: 0.2em;
+}
+
+.panel-body {
+  padding: 10px 15px 0px 15px;
+}
+
+.lead {
+  font-size: 16px;
+}
+
+p {
+  font-size: 10px;
+}
+
+.stronger {
+  font-weight: 500;
+}
+
+ul.no-padding {
+  padding-left: 30px;
+}
+
+p.no-margin-print {
+  margin-bottom: 0px;
+}
+
+h4.label-list {
+  font-size: 14px;
+  line-height: 1.7em;
+  margin-top: 0px;
+}
+
+.extra-margin h6 {
+  margin-bottom: 0px;
+}
+
+li {
+  font-size: 10px;
+}
+
+.page-break {
+  page-break-before: always;
+}

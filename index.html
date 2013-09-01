@@ -4,13 +4,13 @@
 		<title>Fabien Warniez - Vancouver Software Engineer</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
-		<link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen" />
-		<link href="css/style.css" rel="stylesheet" media="screen" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+		<link href="css/screen.css" rel="stylesheet" media="screen" />
+		<link href="css/print.css" rel="stylesheet" media="print" />
 	</head>
 
 	<body>
-
 		<!-- Fixed navbar -->
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
@@ -20,25 +20,16 @@
 				    	<span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 	        		</button>
-					<a class="navbar-brand" href="/">Fabien Warniez</a>
+					<a class="navbar-brand" href="">FW</a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li class="divider"></li>
-								<li class="dropdown-header">Nav header</li>
-								<li><a href="#">Separated link</a></li>
-								<li><a href="#">One more separated link</a></li>
-							</ul>
-						</li>
+						<li><a class="scroll" href="#professional-experience">Pro. Experience</a></li>
+						<li><a class="scroll" href="#education">Education</a></li>
+						<li><a class="scroll" href="#personal-projects">Perso. Projects</a></li>
+						<li><a class="scroll" href="#skills">Skills</a></li>
+						<li><a class="scroll" href="#languages">Languages</a></li>
+						<li><a href="/fabien-warniez.pdf" target="_blank">Download PDF</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -48,17 +39,21 @@
 
 			<!-- Main jumbotron for a primary marketing message or call to action -->
 			<div class="jumbotron">
-				<h1>Fabien Warniez <small>Software Engineer</small></h1>
+				<h1 class="visible-print">Fabien Warniez <small>Software Engineer - <u>fabien@warniez.com</u> - See full version at <u>warniez.com</u></small></h1>
+				<h1 class="hidden-print">Fabien Warniez <small>Software Engineer</small></h1>
 				<p>I am a versatile Software Engineer with <strong>10 years</strong> of programming experience. I have built desktop, mobile, server and web applications, using a lot of different technologies.</p>
 				<p><strong>Clean and elegant code</strong> is the reason I became a software engineer. There is always something new to learn, and I am definitely up for a challenge.</p>
 				<p>I want to lead development teams on massive projects while still being able to get my hands dirty.</p>
-				<p><a class="btn btn-primary btn-lg" href="mailto:fabien@warniez.com">Email me &raquo;</a></p>
+				<p class="hidden-print"><a class="btn btn-primary btn-lg" href="mailto:fabien@warniez.com">Email me &raquo;</a></p>
 			</div>
 
 			<div class="row">
 
+				<a class="anchor" id="professional-experience"></a>
+
 				<div class="col-lg-6 col-md-12">
 					<div class="panel panel-default">
+						
 						<div class="panel-heading">
 							<h3 class="panel-title">Professional Experience</h3>
 						</div>
@@ -66,7 +61,7 @@
 						<div class="panel-body">
 
 							<div class="extra-margin">
-								<p>
+								<p class="no-margin-print">
 									<span class="lead stronger">Software Development Lead</span>
 									<br />
 									<a href="http://dimerocker.com" target="_blank">Overinteractive Media / dimeRocker</a>, Vancouver, BC
@@ -75,17 +70,17 @@
 									<br />
 									<small>
 										Skills acquired: Zend Framework, team management, code deployment strategy, data caching, Twitter Bootstrap, YouTube API, Amazon S3 API
-										<ul class="no-padding">
-											<li><a href="http://www.cinecoup.com" target="_blank">CineCoup</a>: Led the development of the <em>Film Accelerator</em></li>
-											<li><a href="http://storyhive.optiklocal.com" target="_blank">TELUS STORYHIVE</a>: Led the development of a social platform to distribute grants for local community TV programming</li>
-											<li>Social Farm: Built a multi-million row social data harvesting platform</li>
-										</ul>
 									</small>
 								</p>
+								<ul class="no-padding">
+									<li><a href="http://www.cinecoup.com" target="_blank">CineCoup</a>: Led the development of the <em>Film Accelerator</em></li>
+									<li><a href="http://storyhive.optiklocal.com" target="_blank">TELUS STORYHIVE</a>: Led the development of a social platform to distribute grants for local community TV programming</li>
+									<li>Social Farm: Built a multi-million row social data harvesting platform</li>
+								</ul>
 							</div>
 		
 							<div class="extra-margin">
-								<p>
+								<p class="no-margin-print">
 									<span class="lead stronger">Technology Consultant</span>
 									<br />
 									<a href="http://www.accenture.com" target="_blank">Accenture</a>, Vancouver, BC
@@ -94,18 +89,18 @@
 									<br />
 									<small>
 										Skills acquired: banking industry, big data management, analytics and reporting software, requirements management, driving of client interviews
-										<ul class="no-padding">
-											<li>
-												<a href="http://www.tdcanadatrust.com/" target="_blank">TD</a> / <a href="http://www.mbna.ca" target="_blank">MBNA</a> merger in Ottawa:
-												Participated in the gathering of MBNA's data analytics and data warehousing needs before incorporation into TD's systems
-											</li>
-										</ul>
 									</small>
 								</p>
+								<ul class="no-padding">
+									<li>
+										<a href="http://www.tdcanadatrust.com/" target="_blank">TD</a> / <a href="http://www.mbna.ca" target="_blank">MBNA</a> merger in Ottawa:
+										Participated in the gathering of MBNA's data analytics and data warehousing needs before incorporation into TD's systems
+									</li>
+								</ul>
 							</div>
 
 							<div class="extra-margin">
-								<p>
+								<p class="no-margin-print">
 									<span class="lead stronger">R&D Technology Consultant</span>
 									<br />
 									<a href="http://www.accenture.com/us-en/technology/technology-labs/Pages/index.aspx" target="_blank">Accenture Technology Labs</a>, Sophia Antipolis, France
@@ -114,20 +109,22 @@
 									<br />
 									<small>
 										Skills acquired: database design, working with external APIs, team management, rapid prototyping, working with "just-released" technologies
-										<ul class="no-padding">
-											<li>Developed multiple <a href="http://en.wikipedia.org/wiki/Interactive_whiteboard">Interactive Wall</a> applications in Adobe AIR, including one for <a href="http://www.groupamabanque.com" target="_blank">Groupama Banque</a>'s new headquarters</li>
-											<li>Developed a mortgage simulator for <a href="http://www.pixelsense.com">Microsoft PixelSense</a> (f.k.a Surface)</li>
-											<li>Developed a banking iPad application for <a href="http://www.rbs.co.uk" target="_blank">Royal Bank of Scotland</a></li>
-											<li>Trained and led a team in improving the accessibility of the Adobe Flex based <a href="http://www.revenue.ie" target="_blank">Irish Revenue PAYE anytime</a> online tax application</li>
-											<li>Developed a real-time Silverlight based telemetry application for a <a href="http://www.shell.com/global/environment-society/ecomarathon.html" target="_blank">Shell Eco-marathon</a> team</li>
-											<li>Designed and led the delivery of a reporting and analytics platform for social media brand pages</li>
-										</ul>
 									</small>
 								</p>
+								<ul class="no-padding">
+									<li>Developed multiple <a href="http://en.wikipedia.org/wiki/Interactive_whiteboard">Interactive Wall</a> applications in Adobe AIR, including one for <a href="http://www.groupamabanque.com" target="_blank">Groupama Banque</a>'s new headquarters</li>
+									<li>Developed a mortgage simulator for <a href="http://www.pixelsense.com">Microsoft PixelSense</a> (f.k.a Surface)</li>
+									<li>Developed a banking iPad application for <a href="http://www.rbs.co.uk" target="_blank">Royal Bank of Scotland</a></li>
+									<li>Trained and led a team in improving the accessibility of the Adobe Flex based <a href="http://www.revenue.ie" target="_blank">Irish Revenue PAYE anytime</a> online tax application</li>
+									<li>Developed a real-time Silverlight based telemetry application for a <a href="http://www.shell.com/global/environment-society/ecomarathon.html" target="_blank">Shell Eco-marathon</a> team</li>
+									<li>Designed and led the delivery of a reporting and analytics platform for social media brand pages</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<a class="anchor" id="education"></a>
 
 				<div class="col-lg-6 col-md-12">
 					<div class="panel panel-default">
@@ -138,23 +135,21 @@
 						<div class="panel-body">
 		
 							<div class="extra-margin">
-								<p>
+								<p class="no-margin-print">
 									<span class="lead stronger">Master of Science</span> in Computer Engineering, <abbr title="Multimedia and Information Technologies">MTI</abbr> major
 									<br />
 									<a href="http://www.epita.fr">EPITA</a>, Paris, France
 									<br />
 									<em>August 2003 - July 2008</em>
-									<small>
-										<ul class="no-padding">
-											<li>Developed an FTP server in C</li>
-											<li>Developed a search engine and its crawler in PHP</li>
-											<li>Developed a project management application in Adobe AIR (team of 4)</li>
-											<li>Developed a compiler for the Tiger programming language in C++ (team of 4)</li>
-											<li>Developed a Wipeout-like video game in Delphi / OpenGL (team of 4)</li>
-											<li>Developed a Tron-like video game in C (team of 2)</li>
-										</ul>
-									</small>
 								</p>
+								<ul class="no-padding">
+									<li>Developed an FTP server in C</li>
+									<li>Developed a search engine and its crawler in PHP</li>
+									<li>Developed a project management application in Adobe AIR (team of 4)</li>
+									<li>Developed a compiler for the Tiger programming language in C++ (team of 4)</li>
+									<li>Developed a Wipeout-like video game in Delphi / OpenGL (team of 4)</li>
+									<li>Developed a Tron-like video game in C (team of 2)</li>
+								</ul>
 							</div>
 		
 							<div class="extra-margin">
@@ -177,7 +172,9 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-6 col-md-12">
+				<a class="anchor" id="personal-projects"></a>
+
+				<div class="col-lg-6 col-md-12 page-break">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Personal Projects</h3>
@@ -197,7 +194,7 @@
 		
 							<div class="extra-margin">
 								<p>
-									<span class="lead stronger">Contributor of <a href="http://www.twitterizer.net">Twitterizer</a></span>
+									<span class="lead stronger">Contributor to <a href="http://www.twitterizer.net">Twitterizer</a></span>
 									<br />
 									A now abandoned .Net client library for the Twitter API.
 									<br />
@@ -211,6 +208,8 @@
 
 				<div class="clearfix visible-lg"></div>
 				
+				<a class="anchor" id="skills"></a>
+
 				<div class="col-lg-6 col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -222,10 +221,11 @@
 							<div class="extra-margin">
 								<p>
 									<span class="lead stronger">Technologies</span>
-									<span class="label label-success">proficient</span>
-									<span class="label label-info">interested</span>
-									<span class="label label-warning">experience with</span>
+									<span class="label label-success hidden-print">proficient</span>
+									<span class="label label-info hidden-print">interested</span>
+									<span class="label label-warning hidden-print">experience with</span>
 								</p>
+								<h6 class="visible-print">Proficient</h6>
 								<h4 class="label-list">
 									<span class="label label-success">PHP</span>
 									<span class="label label-success">Zend</span>
@@ -240,6 +240,7 @@
 									<span class="label label-success">Git</span>
 									<span class="label label-success">SVN</span>
 								</h4>
+								<h6 class="visible-print">Interested</h6>
 								<h4 class="label-list">
 									<span class="label label-info">Python</span>
 									<span class="label label-info">Google Apps</span>
@@ -247,6 +248,7 @@
 									<span class="label label-info">AngularJS</span>
 									<span class="label label-info">Drupal</span>
 								</h4>
+								<h6 class="visible-print">experience with</h6>
 								<h4 class="label-list">
 									<span class="label label-warning">Cocoa Touch / Objective-C</span>
 									<span class="label label-warning">C</span>
@@ -263,13 +265,14 @@
 									<span class="lead stronger">Concepts</span>
 								</p>
 								<h4 class="label-list">
-									<span class="label label-default">application design</span>
-									<span class="label label-default">database design</span>
+									<span class="label label-default">MVC</span>
 									<span class="label label-default">object-oriented programming</span>
 									<span class="label label-default">data caching</span>
+									<span class="label label-default">i18n</span>
 									<span class="label label-default">extreme programming</span>
 									<span class="label label-default">agile development</span>
-									<span class="label label-default">i18n</span>
+									<span class="label label-default">application design</span>
+									<span class="label label-default">database design</span>
 									<span class="label label-default">SEO</span>
 								</h4>
 							</div>
@@ -293,6 +296,8 @@
 					</div>
 				</div>
 				
+				<a class="anchor" id="languages"></a>
+
 				<div class="col-lg-6 col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -314,10 +319,33 @@
 			</div>
 
 		</div> <!-- /container -->
-
+		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+			
+			$(function () {
+				$(".scroll").click(function(event) {
+					event.preventDefault();
+					//calculate destination place
+					var dest = 0;
+					if ($(this.hash).offset().top > $(document).height()-$(window).height())
+					{
+						dest = $(document).height() - $(window).height();
+					}
+					else
+					{
+						dest = $(this.hash).offset().top;
+					}
+					//go to destination
+					$('html,body').animate({scrollTop: dest}, 500, 'swing');
+				});
+			});
+			
+		</script>
+	
 	</body>
 </html>
